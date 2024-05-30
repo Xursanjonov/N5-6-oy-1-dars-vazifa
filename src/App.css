@@ -1,0 +1,100 @@
+.app {
+  width: 800px;
+  height: 480px;
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 0.2rem solid blue;
+  border-radius: 20px;
+}
+.title {
+  font-size: 2.5rem;
+  color: aqua;
+}
+.app_form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.app__btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.app__reset {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.resetBtnOn {
+  width: 200px;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: black;
+  background-color: orange;
+  border-color: orange;
+}
+.resetBtnOff {
+  width: 200px;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: rgb(78, 78, 78);
+  background-color: gray;
+  border-color: gray;
+}
+.createBtn {
+  width: 150px;
+  padding: 0.8rem;
+  color: black;
+  background-color: lime;
+  border-color: lime;
+}
+.deleteBtnOn {
+  width: 150px;
+  padding: 0.8rem;
+  color: black;
+  background-color: red;
+  border-color: red;
+}
+.deleteBtnOff {
+  width: 150px;
+  padding: 0.8rem;
+  color: rgb(84, 84, 84);
+  background-color: gray;
+  border-color: gray;
+}
+button {
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+.input {
+    width: 200px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    color: black;
+    padding: .3rem 1rem;
+    background-color: white;
+}
+
+/* count */
+.totalCount {
+  width: 320px;
+  height: 70px;
+  padding: .8rem 1rem;
+  text-align: center;
+  border-radius: 10px;
+  color: black;
+  background-color: aqua;
+  overflow-x: auto;
+}
+.totalCount::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
