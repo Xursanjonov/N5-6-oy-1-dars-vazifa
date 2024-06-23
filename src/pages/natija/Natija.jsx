@@ -5,7 +5,7 @@ const Natija = () => {
     const count = useSelector(state => state.counterSlice.count)
 
     return (
-        <h1 className='totalCount'>{count}</h1>
+        <h1 className='totalCount'>{count <= 0 ? 0 : count}</h1>
     )
 }
 

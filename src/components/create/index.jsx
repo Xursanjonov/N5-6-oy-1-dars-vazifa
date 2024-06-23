@@ -1,14 +1,13 @@
-import React, { memo } from 'react'
-import { useDispatch } from 'react-redux'
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { increment } from '../../context/slice/counterSlice'
-import { getStorage } from '../../lib'
 
 const CreateBtn = () => {
-    const newCreateCount = +getStorage('newCreate')
     const dispatch = useDispatch()
+    const createCount = useSelector(state => state.counterSlice.createCount)
 
     return (
-        <button onClick={() => dispatch(increment(newCreateCount ? newCreateCount : 1))} className='createBtn'>CreateBtn</button>
+        <button onClick={() => dispatch(increment(createCount))} className='createBtn'>CreateBtn</button>
     )
 }
 
